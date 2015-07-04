@@ -1,4 +1,4 @@
-package app.camalyzer;
+package app.camalyzer.app;
 
 import retrofit.RequestInterceptor;
 
@@ -8,7 +8,7 @@ import retrofit.RequestInterceptor;
 public class SessionRequestInterceptor implements RequestInterceptor {
     @Override
     public void intercept(RequestFacade request) {
-        if (user is connected){
+        if (true) {
             request.addHeader("Header name", "Header value");
         }
     }

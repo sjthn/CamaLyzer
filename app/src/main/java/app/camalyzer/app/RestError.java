@@ -1,4 +1,4 @@
-package app.camalyzer;
+package app.camalyzer.app;
 
 import com.google.gson.annotations.SerializedName;
 

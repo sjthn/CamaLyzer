@@ -1,8 +1,7 @@
-package app.camalyzer;
+package app.camalyzer.app;
 
 import retrofit.Callback;
 import retrofit.RetrofitError;
-import retrofit.client.Response;
 
 /**
  * Created by admin on 7/3/2015.

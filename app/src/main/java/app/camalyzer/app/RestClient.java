@@ -1,9 +1,9 @@
-package app.camalyzer;
+package app.camalyzer.app;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import app.camalyzer.CameraActivity.ApiService;
+import app.camalyzer.app.CameraActivity.ApiService;
 import retrofit.RestAdapter;
 import retrofit.converter.GsonConverter;
 
