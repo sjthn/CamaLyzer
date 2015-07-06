@@ -17,12 +17,12 @@ public abstract class RestCallback<T> implements Callback<T> {
 
     @Override
     public void failure(RetrofitError error) {
-        RestError restError = (RestError) error.getBodyAs(RestError.class);
+        /*RestError restError = (RestError) error.getBodyAs(RestError.class);
 
         if (restError != null)
             failure(restError);
         else {
-            failure(new RestError(error.getMessage()));
-        }
+            //failure(new RestError(error.getMessage()));
+        }*/
     }
 }

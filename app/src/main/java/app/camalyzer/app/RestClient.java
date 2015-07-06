@@ -12,7 +12,7 @@ import retrofit.converter.GsonConverter;
  */
 public class RestClient {
 
-    private static final String BASE_URL = "http://api.cloudsightapi.com/";
+    private static final String BASE_URL = "http://api.cloudsightapi.com";
     private ApiService apiService;
 
     public RestClient() {
@@ -22,7 +22,7 @@ public class RestClient {
         RestAdapter restAdapter = new RestAdapter.Builder()
                 .setLogLevel(RestAdapter.LogLevel.FULL)
                 .setEndpoint(BASE_URL)
-                .setConverter(new GsonConverter(gson))
+                //.setConverter(new GsonConverter(gson))
                 .setRequestInterceptor(new SessionRequestInterceptor())
                 .build();
 

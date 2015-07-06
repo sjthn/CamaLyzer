@@ -7,11 +7,36 @@ import com.google.gson.annotations.SerializedName;
  */
 public class RestError {
 
-    @SerializedName("status")
-    private String mErrStatus;
+    @SerializedName("url")
+    public String mErrStatus;
 
-    public RestError(String mErrStatus) {
+    @SerializedName("token")
+    private String mToken;
+
+    @SerializedName("status")
+    private String mStatus;
+
+    @SerializedName("name")
+    private String mName;
+
+    public RestError(String mErrStatus, String token, String mStatus, String mName) {
         this.mErrStatus = mErrStatus;
+        mToken = token;
+        this.mStatus = mStatus;
+        this.mName = mName;
+
+    }
+
+    public String getToken() {
+        return mToken;
+    }
+
+    public String getStatus() {
+        return mStatus;
+    }
+
+    public String getName() {
+        return mName;
     }
 
 }
